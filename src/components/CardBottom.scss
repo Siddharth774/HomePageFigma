@@ -1,0 +1,76 @@
+.card-bottom {
+  width: 333px;
+  height: 370px;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+.b-img {
+  display: flex;
+  justify-content: center;
+}
+
+.b-tag span {
+  background-color: #f2f4f7;
+  color: #074786;
+  font-size: 13px;
+  font-weight: 400;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.bottom-title {
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #626e79;
+}
+.bottom-title h3 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.bottom-title p {
+  word-spacing: 5px;
+}
+.b-price {
+  margin-top: 10px;
+  color: #626e79;
+  margin-left: 20px;
+  display: flex;
+}
+.b-price span:nth-child(1) {
+  font-weight: bold;
+}
+.b-price span:nth-child(2) {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.b-price span:nth-child(3) {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 10px;
+  color: #ef4c5d;
+}
+.b-view {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.b-view button {
+  width: 292px;
+  height: 48px;
+  border-radius: 12px;
+  border: none;
+  background-color: #1b88f4;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-bottom {
+    width: 300px;
+    height: 370px;
+    margin-bottom: 10px;
+  }
+}

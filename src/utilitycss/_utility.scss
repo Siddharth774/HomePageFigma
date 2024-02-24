@@ -1,0 +1,204 @@
+$padding-values: (
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  14,
+  16,
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  44,
+  48,
+  52,
+  56,
+  60,
+  64,
+  72,
+  80,
+  96
+);
+$base-unit: 4px;
+
+@function padding($value) {
+  @return $value * $base-unit;
+}
+
+@each $value in $padding-values {
+  .p-#{$value} {
+    padding: padding($value);
+  }
+
+  .px-#{$value} {
+    padding-left: pa dding($value);
+    padding-right: padding($value);
+  }
+
+  .py-#{$value} {
+    padding-top: padding($value);
+    padding-bottom: padding($value);
+  }
+
+  .ps-#{$value} {
+    padding-inline-start: padding($value);
+  }
+
+  .pe-#{$value} {
+    padding-inline-end: padding($value);
+  }
+
+  .pt-#{$value} {
+    padding-top: padding($value);
+  }
+
+  .pr-#{$value} {
+    padding-right: padding($value);
+  }
+
+  .pb-#{$value} {
+    padding-bottom: padding($value);
+  }
+
+  .pl-#{$value} {
+    padding-left: padding($value);
+  }
+}
+
+@mixin margin-auto($direction) {
+  margin-#{$direction}: auto;
+}
+
+@for $i from 0 to 100 {
+  $rem: $i * 0.125 + 0.125;
+  $px: $rem * 16;
+
+  .m-#{$i} {
+    margin: #{$rem}rem;
+  }
+
+  .mx-#{$i} {
+    margin-left: #{$rem}rem;
+    margin-right: #{$rem}rem;
+  }
+
+  .my-#{$i} {
+    margin-top: #{$rem}rem;
+    margin-bottom: #{$rem}rem;
+  }
+
+  .ms-#{$i} {
+    margin-inline-start: #{$rem}rem;
+  }
+
+  .me-#{$i} {
+    margin-inline-end: #{$rem}rem;
+  }
+
+  .mt-#{$i} {
+    margin-top: #{$rem}rem;
+  }
+
+  .mr-#{$i} {
+    margin-right: #{$rem}rem;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: #{$rem}rem;
+  }
+
+  .ml-#{$i} {
+    margin-left: #{$rem}rem;
+  }
+
+  .m-#{$px} {
+    margin: #{$px}px;
+  }
+
+  .mx-#{$px} {
+    margin-left: #{$px}px;
+    margin-right: #{$px}px;
+  }
+
+  .my-#{$px} {
+    margin-top: #{$px}px;
+    margin-bottom: #{$px}px;
+  }
+
+  .ms-#{$px} {
+    margin-inline-start: #{$px}px;
+  }
+
+  .me-#{$px} {
+    margin-inline-end: #{$px}px;
+  }
+
+  .mt-#{$px} {
+    margin-top: #{$px}px;
+  }
+
+  .mr-#{$px} {
+    margin-right: #{$px}px;
+  }
+
+  .mb-#{$px} {
+    margin-bottom: #{$px}px;
+  }
+
+  .ml-#{$px} {
+    margin-left: #{$px}px;
+  }
+}
+
+@function padding($value) {
+  @return $value * $base-unit;
+}
+
+$text-sizes: (
+  "xs": 0.75rem,
+  "sm": 0.875rem,
+  "base": 1rem,
+  "lg": 1.125rem,
+  "xl": 1.25rem,
+  "2xl": 1.5rem,
+  "3xl": 1.875rem,
+  "4xl": 2.25rem,
+  "5xl": 3rem,
+  "6xl": 3.75rem,
+  "7xl": 4.5rem,
+  "8xl": 6rem,
+  "9xl": 8rem,
+);
+
+@each $name, $size in $text-sizes {
+  .text-#{$name} {
+    font-size: $size;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.item-center {
+  align-items: center;
+}

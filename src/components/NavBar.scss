@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 64px;
+  background-color: #212731;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.menu {
+  display: flex;
+  width: 55%;
+  justify-content: space-around;
+  color: white;
+}
+input {
+  width: 258px;
+  height: 37px;
+  border-radius: 8px;
+  border: 1px;
+}
+.search-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 19px;
+  margin-left: 5px;
+}
+
+.nav-svg {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .nav-svg {
+    display: flex;
+  }
+}

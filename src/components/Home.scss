@@ -1,0 +1,145 @@
+.home-container {
+  width: 70%;
+}
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-title {
+  margin: 30px 0 10px 0;
+  word-spacing: 5px;
+  font-size: 48px;
+  color: #2c384a;
+}
+.home-top1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  color: #4b5665;
+  font-size: 14px;
+}
+.top1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top2 {
+  display: flex;
+  align-items: center;
+  color: #727d87;
+}
+.home-top2 {
+  margin: 25px 0;
+  color: #4b5665;
+  font-size: 14px;
+}
+.home-top3 {
+  color: #5c6874;
+  font-size: 13px;
+}
+.home-bottom {
+  margin-top: 70px;
+}
+.b-title {
+  margin-bottom: 30px;
+}
+.b-title p {
+  color: #2c384a;
+  font-size: 32px;
+  font-weight: 400;
+}
+.bottom-card {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-signup {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-signup p {
+  font-size: 32px;
+  color: #5c6874;
+  width: 80%;
+}
+.b-input {
+  display: flex;
+}
+.b-input input {
+  border-radius: 12px 0 0 12px;
+  background-color: #ffffff;
+}
+.bottom-signup button {
+  width: 70px;
+  background-color: #1b88f4;
+  border: none;
+  color: #ffffff;
+  border-radius: 0 12px 12px 0;
+}
+.bottom-contact {
+  margin-top: 40px;
+  background-color: #212731;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+.bottom-contact h6 {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.bottom-contact p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #b6bdc4;
+}
+.b-last p {
+  margin-top: 50px;
+}
+.b-last svg {
+  margin-left: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .home-title {
+    font-size: 30px;
+  }
+  .home-top1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .top2 {
+    margin-top: 5px;
+  }
+  .home-top2 div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home-top2 span {
+    padding: 10px;
+  }
+  .home-top3 div {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 30px;
+  }
+  .bottom-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-signup {
+    flex-direction: column;
+  }
+  .bottom-signup p {
+    font-size: 22px;
+    color: #5c6874;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
